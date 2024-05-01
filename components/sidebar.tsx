@@ -10,13 +10,13 @@ const montserrat = Montserrat({ weight: "600", subsets: ["latin"] });
 const routes = [
   {
     label: "Project Overview",
-    href: "/dashboard",
+    href: "/project-overview",
     icon: LayoutListIcon,
     color: "text-sky-500",
   },
   {
     label: "Task Management",
-    href: "/conversation",
+    href: "/task-management",
     icon: ClipboardList,
     color: "text-violet-500",
   },
@@ -25,7 +25,7 @@ const routes = [
 const Sidebar = () => {
   const pathname = usePathname();
   return (
-    <div className="space-y-4 py-4 h-full flex flex-col bg-[#111827] text-white">
+    <div className="space-y-4 py-4 h-full flex flex-col bg-white">
       <div className="px-3 py-2 flex-1">
         {/* <Link href={"/dashboard"} className="flex items-center pl-3 mb-14">
           <div className="relative w-16 h-16 mr-4 ">
@@ -42,9 +42,9 @@ const Sidebar = () => {
               href={route.href}
               key={route.href}
               className={cn(
-                "flex justify-start hover:text-white hover:bg-white/10 rounded-lg text-sm cursor-pointer group p-3",
+                "flex justify-start hover:text-white hover:bg-black rounded-lg text-sm cursor-pointer group p-3",
                 pathname === route.href
-                  ? "text-white bg-white/10"
+                  ? "text-black bg-black/10"
                   : "text-zinc-500"
               )}
             >

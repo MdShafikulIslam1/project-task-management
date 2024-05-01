@@ -2,7 +2,7 @@ import MobileSidebar from "./mobileSidebar";
 
 const Navbar = async () => {
   return (
-    <div className="flex items-center p-4">
+    <div className="flex items-center p-4 bg-white">
       <MobileSidebar />
     </div>
   );

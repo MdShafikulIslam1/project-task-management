@@ -6,13 +6,13 @@ const DashboardLayout = async ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="h-full relative">
       {/* side bar */}
-      <div className="hidden md:h-full md:flex md:flex-col md:w-72 md:fixed md:inset-y-0 md:bg-gray-900">
+      <div className="hidden md:h-full md:flex md:flex-col md:w-72 md:fixed md:inset-y-0 md:bg-white">
         <div>
           <Sidebar />
         </div>
       </div>
       {/* main component */}
-      <main className="md:pl-72">
+      <main className="md:pl-72 bg-white h-screen">
         <Navbar />
         {children}
       </main>
